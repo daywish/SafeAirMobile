@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/authorizeFragment">
+
+    <fragment
+        android:id="@+id/roomsFragment"
+        android:name="com.example.safeair.RoomsFragment"
+        android:label="RoomsFragment" >
+        <action
+            android:id="@+id/action_roomsFragment_to_editRoomFragment"
+            app:destination="@id/editRoomFragment" />
+        <action
+            android:id="@+id/action_roomsFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editRoomFragment"
+        android:name="com.example.safeair.EditRoomFragment"
+        android:label="EditRoomFragment" >
+        <action
+            android:id="@+id/action_editRoomFragment_to_roomsFragment"
+            app:destination="@id/roomsFragment" />
+        <argument
+            android:name="RoomId"
+            app:argType="string" />
+        <argument
+            android:name="Temperature"
+            app:argType="string" />
+        <argument
+            android:name="Wetness"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/authorizeFragment"
+        android:name="com.example.safeair.AuthorizeFragment"
+        android:label="AuthorizeFragment" >
+        <action
+            android:id="@+id/action_authorizeFragment_to_roomsFragment"
+            app:destination="@id/roomsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.safeair.SettingsFragment"
+        android:label="SettingsFragment" >
+        <action
+            android:id="@+id/action_settingsFragment_to_authorizeFragment"
+            app:destination="@id/authorizeFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_roomsFragment"
+            app:destination="@id/roomsFragment" />
+    </fragment>
+</navigation>

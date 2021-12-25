@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SafeAir</string>
+    <string name="rooms">Кімнати</string>
+    <string name="exit">Вийти</string>
+    <string name="number">Номер:</string>
+    <string name="humidity">Вологість:</string>
+    <string name="change">Змінити</string>
+    <string name="temperature">Температура:</string>
+    <string name="back">Повернутися</string>
+    <string name="authorize">Авторизація</string>
+    <string name="email">Електронна скринька</string>
+    <string name="password">Пароль</string>
+    <string name="enter">Увійти</string>
+    <string name="languageTitle">Мова</string>
+    <string name="save">Зберегти</string>
+    <string name="settings">Налаштування</string>
+    <string name="uk">uk</string>
+    <string name="en">English (en)</string>
+</resources>
